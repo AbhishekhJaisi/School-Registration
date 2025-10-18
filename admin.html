@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container dashboard-container">
+        <div class="header">
+            <div>
+                <h1 class="header-title">Admin Dashboard</h1>
+                <p class="welcome-msg" id="welcomeMessage"></p>
+            </div>
+            <button id="logoutBtn" class="btn">Logout</button>
+        </div>
+        
+        <!-- Post Notice Section -->
+        <div class="section">
+            <h2 class="section-title">Post a New Notice</h2>
+            <form id="noticeForm">
+                <div class="form-group">
+                    <label for="noticeTitle">Title</label>
+                    <input type="text" id="noticeTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="noticeContent">Content</label>
+                    <textarea id="noticeContent" required></textarea>
+                </div>
+                <button type="submit" class="btn">Post Notice</button>
+            </form>
+            <div id="noticeMessage"></div>
+        </div>
+
+        <!-- View Uploaded Documents Section -->
+        <div class="section">
+            <h2 class="section-title">Student Document Submissions</h2>
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>File Name</th>
+                        <th>Uploaded At</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody id="documentList"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

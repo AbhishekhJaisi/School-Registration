@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container dashboard-container">
+        <div class="header">
+            <div>
+                <h1 class="header-title">Student Dashboard</h1>
+                <p class="welcome-msg" id="welcomeMessage"></p>
+            </div>
+            <button id="logoutBtn" class="btn">Logout</button>
+        </div>
+
+        <!-- Document Upload Section -->
+        <div class="section">
+            <h2 class="section-title">Upload a Document</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="document">Select File</label>
+                    <input type="file" id="document" required>
+                </div>
+                <button type="submit" class="btn">Upload</button>
+            </form>
+            <div id="uploadMessage"></div>
+        </div>
+        
+        <!-- Notice Board Section -->
+        <div class="section">
+            <h2 class="section-title">Notice Board</h2>
+            <div id="noticeBoard"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
